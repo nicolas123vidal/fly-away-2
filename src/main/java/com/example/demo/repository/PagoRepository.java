@@ -5,11 +5,12 @@ import java.sql.Date;
 import java.util.List;
 
 import com.example.demo.model.Pago;
+import com.example.demo.model.Vuelo;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 
 
-public interface PagoRepository extends JpaRepository { 
+public interface PagoRepository extends JpaRepository <Vuelo, Integer>{ 
     
    
     // Listar todos los pagos de un usuario
