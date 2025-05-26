@@ -13,7 +13,7 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor 
 @NoArgsConstructor
 public class Vuelo { 
-     @Id
+    @Id
     @GeneratedValue(strategy = GenerationType. IDENTITY)
     private Integer idSVuelo;
     
