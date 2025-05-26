@@ -17,7 +17,7 @@ import org.springframework.web.bind.annotation.RestController;
 import com.example.demo.model.Vuelo;
 import com.example.demo.service.VueloService;
 @RestController
-@RequestMapping("/vuelos")
+@RequestMapping("/api/v1/vuelo")
 public class VueloController { 
     @Autowired
     private VueloService vueloService;
@@ -43,7 +43,7 @@ public class VueloController {
     // PUT: Actualizar vuelo existente
     @PutMapping("/{id}")
     public Vuelo actualizarVuelo(@PathVariable int id, @RequestBody Vuelo vuelo) {
-        vuelo.setIdSVuelo(id);
+        vuelo.setIdVuelo(null);
         return vueloService.guardarVuelo(vuelo);
     }
 

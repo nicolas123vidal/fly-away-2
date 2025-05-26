@@ -5,12 +5,13 @@ import java.util.List;
 import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import com.example.demo.model.Vuelo;
 import com.example.demo.repository.VueloRepository;
 
 
-
+@Service
 public class VueloService { 
     @Autowired
     private VueloRepository vueloRepository;
@@ -48,7 +49,7 @@ public class VueloService {
 
     // Buscar vuelos disponibles
     public List<Vuelo> obtenerVuelosDisponibles() {
-        return vueloRepository.findByDisponiblidadServicioTrue();
+        return vueloRepository.findByDisponibilidadServicioTrue();
     }
 
     // Buscar vuelos entre fechas

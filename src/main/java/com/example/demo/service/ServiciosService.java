@@ -4,10 +4,11 @@ import java.util.List;
 import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import com.example.demo.model.servicios;
 import com.example.demo.repository.ServicioRepository;
-
+@Service
 public class ServiciosService { 
     @Autowired
     private ServicioRepository servicioRepository;

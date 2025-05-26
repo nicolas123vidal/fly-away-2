@@ -32,7 +32,7 @@ public class AlojamientoService {
     }
 
     public List<Alojamiento> buscarPorProvedor(String provedor) {
-        return alojamientoRepository.findByProvedor(provedor);
+        return alojamientoRepository.findByProveedor(provedor);
     }
 
     public List<Alojamiento> buscarPorFechas(Date inicio, Date fin) {

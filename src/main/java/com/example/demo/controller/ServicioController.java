@@ -9,10 +9,13 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
 
 import com.example.demo.model.servicios;
 import com.example.demo.service.ServiciosService;
-
+@RestController
+@RequestMapping("/api/v1/servicio")
 public class ServicioController { 
     @Autowired
     private ServiciosService servicioService;
